@@ -2,7 +2,17 @@ import React from "react";
 import ReactDom from "react-dom";
 
 function Greeting() {
-  return <h4>This is Paul and this is my first component</h4>;
+  return (
+    <div>
+      <Person />
+      <Message />
+    </div>
+  );
 }
+
+const Person = () => <h1>Paul Billings</h1>;
+const Message = () => {
+  return <p>This is my message</p>;
+};
 
 ReactDom.render(<Greeting />, document.getElementById("root"));
