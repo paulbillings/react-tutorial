@@ -41,7 +41,11 @@ const Title = () => {
 };
 
 const Author = () => {
-  return <h4>Charlie Mackesy</h4>;
+  return (
+    <h4 style={{ color: "#617d98", fontSize: "0.75rem", margin: "0.25rem" }}>
+      Charlie Mackesy
+    </h4>
+  );
 };
 
 ReactDom.render(<BookList />, document.getElementById("root"));
